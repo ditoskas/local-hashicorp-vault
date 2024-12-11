@@ -1,0 +1,7 @@
+﻿### PowerShell template
+# Exclude packaged modules
+*.zip
+.idea
+# Exclude .NET assemblies from source
+*.dll
+
