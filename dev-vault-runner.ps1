@@ -1,2 +1,4 @@
-#Remove-Item -Path "C:\Vault\dev_vault" -Recurse -Force
-vault server -config C:\Vault\dev-vault.hcl
+$scriptConfigPath = Join-Path -Path (Get-Location).Path -ChildPath 'Vault\dev-vault.hcl'
+$vaultExePath = Join-Path -Path (Get-Location).Path -ChildPath 'Vault\vault.exe'
+
+& $vaultExePath server -config $scriptConfigPath

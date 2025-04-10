@@ -4,4 +4,4 @@
 .idea
 # Exclude .NET assemblies from source
 *.dll
-
+*.exe
